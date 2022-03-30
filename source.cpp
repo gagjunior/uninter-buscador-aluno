@@ -1,27 +1,26 @@
-#include<stdlib.h>
-#include<stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <conio.h>
 
 int menu();
 
 struct Aluno
 {
-    char nomeAluno[61];
-    char emailAluno[61];
-    int ruAluno;
+	char nomeAluno[61];
+	char emailAluno[61];
+	int ruAluno;
 };
-
 
 int main(int argc, char const *argv[])
 {
-    int opcao = 0;
+	int opcao = 0;
 
-    while (opcao != 2)
-    {
-        opcao = menu();
-    }
-    
-    
-    return 0;
+	while (opcao != 2)
+	{
+		opcao = menu();
+	}
+
+	return 0;
 }
 
 int menu()
@@ -33,7 +32,7 @@ int menu()
 	// Opções do menu
 	printf("1 - Buscar Aluno\n");
 	printf("2 - Sair\n\n");
-	
+
 	// Solicita a opção
 	printf("Digite o numero da opcao desejada: ");
 	scanf("%d", &opcao);
